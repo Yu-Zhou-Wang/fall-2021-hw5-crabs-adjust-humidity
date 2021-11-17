@@ -17,6 +17,7 @@ jobs:
         python -m pip install django
         python -m pip install furl
         python -m pip install django-activity-stream
+        python -m pip install mptt
     - name: Build docker image
       run: make docker-build
     - name: Run tests
