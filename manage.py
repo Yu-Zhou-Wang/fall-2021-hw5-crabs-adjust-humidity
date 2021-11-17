@@ -21,4 +21,4 @@ if __name__ == '__main__':
                 "forget to activate a virtual environment?"
             )
         raise
-    cProfile.run(execute_from_command_line(sys.argv))
+    cProfile.run('execute_from_command_line(sys.argv)')
