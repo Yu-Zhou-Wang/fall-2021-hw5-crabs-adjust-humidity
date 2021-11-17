@@ -22,10 +22,10 @@ if __name__ == '__main__':
             )
         raise
     try:
-        from purl import purl
+        from furl import furl
     except ImportError:
         raise ImportError(
-            "Couldn't import Purl!!!!!!!!"
+            "Couldn't import furl!!!!!!!!"
         )
     print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     cProfile.run('execute_from_command_line(sys.argv)')
