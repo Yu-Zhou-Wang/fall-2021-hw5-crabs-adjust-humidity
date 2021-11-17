@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build docker image
-      run: make docker-build
+#    - name: Build docker image
+#      run: make docker-build
     - name: Run tests
-      run: make docker-test-all
+      run: make docker-runtest-all
