@@ -21,6 +21,12 @@ if __name__ == '__main__':
                 "forget to activate a virtual environment?"
             )
         raise
+    try:
+        import purl
+    except ImportError:
+        raise ImportError(
+            "Couldn't import Purl!!!!!!!!"
+        )
     print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     cProfile.run('execute_from_command_line(sys.argv)')
     print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
