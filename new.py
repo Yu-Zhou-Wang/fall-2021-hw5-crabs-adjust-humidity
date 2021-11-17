@@ -1,8 +1,7 @@
 import cProfile
 
-def f ():
-  a = 10
+def f (a):
   for i in range(a):
     print("fuck you")
 
-cProfile.run('f()')
+cProfile.run('f(a)')
