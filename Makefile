@@ -111,9 +111,6 @@ test-all-migrations-with-postgresql:
 	export MAYAN_DATABASES="{'default':{'ENGINE':'django.db.backends.postgresql','NAME':'$(DEFAULT_DATABASE_NAME)','PASSWORD':'$(DEFAULT_DATABASE_PASSWORD)','USER':'$(DEFAULT_DATABASE_USER)','HOST':'127.0.0.1'}}"; \
 	./manage.py test --mayan-apps --settings=mayan.settings.testing.development --no-exclude --tag=migration
 
-test-new:
-	sudo python ./new.py
-
 gitlab-ci-run: ## Execute a GitLab CI job locally
 gitlab-ci-run:
 	if [ -z $(GITLAB_CI_JOB) ]; then echo "Specify the job to execute using GITLAB_CI_JOB."; exit 1; fi; \
