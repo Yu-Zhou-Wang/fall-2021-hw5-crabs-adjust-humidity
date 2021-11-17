@@ -22,7 +22,7 @@ if __name__ == '__main__':
             )
         raise
     try:
-        import purl
+        from purl import purl
     except ImportError:
         raise ImportError(
             "Couldn't import Purl!!!!!!!!"
