@@ -15,7 +15,7 @@ jobs:
     - name: Install Modules
       run: |
         python -m pip install django
-        python -m pip install Purl
+        python -m pip install furl
     - name: Build docker image
       run: make docker-build
     - name: Run tests
