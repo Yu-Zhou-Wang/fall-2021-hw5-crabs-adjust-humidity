@@ -112,7 +112,7 @@ test-all-migrations-with-postgresql:
 	./manage.py test --mayan-apps --settings=mayan.settings.testing.development --no-exclude --tag=migration
 
 test-new:
-	sudo ./helloworld.py
+	sudo python ./helloworld.py
 
 gitlab-ci-run: ## Execute a GitLab CI job locally
 gitlab-ci-run:
