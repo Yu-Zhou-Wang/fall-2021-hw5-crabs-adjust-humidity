@@ -16,7 +16,7 @@ jobs:
       run: |
         python -m pip install django
         python -m pip install furl
-        python -m pip install actstream
+        python -m pip install django-activity-stream
     - name: Build docker image
       run: make docker-build
     - name: Run tests
