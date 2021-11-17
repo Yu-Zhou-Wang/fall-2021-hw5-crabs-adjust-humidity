@@ -27,6 +27,4 @@ if __name__ == '__main__':
         raise ImportError(
             "Couldn't import furl!!!!!!!!"
         )
-    print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     cProfile.run('execute_from_command_line(sys.argv)')
-    print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
